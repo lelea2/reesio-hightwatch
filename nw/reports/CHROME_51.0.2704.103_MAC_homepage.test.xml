@@ -1,13 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="0"
             failures="0"
-            tests="1">
+            tests="3">
 
   <testsuite name="homepage.test"
     errors="0" failures="0" hostname="" id="" package="homepage.test" skipped="0"
-    tests="1" time="2.517" timestamp="Wed, 29 Jun 2016 21:40:15 GMT">
+    tests="3" time="5.975" timestamp="Wed, 29 Jun 2016 23:58:47 GMT">
   
-    <testcase name="Go to homepage" time="2.517" assertions="2">
+    <testcase name="Checking button on home page" time="2.597" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Test request demo button behavior" time="1.703" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Test get start button behavior" time="1.675" assertions="2">
 
     
 
