@@ -1,0 +1,11 @@
+/lib/*
+/node_modules/
+.DS_Store
+npm-debug.log
+/reports/
+selenium-debug.log/
+local-reports/
+selenium-debug.log
+local.log
+/local-reports
+/tests-output
