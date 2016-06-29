@@ -1,4 +1,4 @@
-#Nightwatch Boilerplate project
+POC for integration testing with nightwatch
 
 ##Getting Started
 
