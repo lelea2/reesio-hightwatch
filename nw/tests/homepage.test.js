@@ -4,9 +4,21 @@ module.exports = {
             .init()
             .waitForElementVisible('body', 2000);
 
-        browser.expect.element('.log-in').to.be.present;
-        browser.expect.element('.onboard-demo').to.be.present;
-        browser.expect.element('.onboard-signup').to.be.present;
+        browser.expect.element('.mod-header .log-in').to.be.present;
+        browser.expect.element('.demo .onboard-demo').to.be.present;
+        browser.expect.element('.signup .onboard-signup').to.be.present;
+    },
+
+    'Test sidebar menu in homepage': (browser) => {
+        browser.click(".mod-header .info-menu", function(response) {
+            browser.expect.element(".mod-info-menu .body").to.be.visible;
+            //browser.expect.element(".links a[href='/features']").to.be.visible;
+        });
+        browser.pause(500);
+        browser.click(".mod-info-menu .toolbar span.pull-left", function(response) {
+            //browser.expect.element(".mod-info-menu .body").to.not.be.visible;
+            //browser.expect.element(".links a[href='/features']").to.be.visible;
+        });
     },
 
     'Test request demo submission': (browser) => {
