@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="4">
+
+  <testsuite name="loginpage.test"
+    errors="0" failures="0" hostname="" id="" package="loginpage.test" skipped="0"
+    tests="4" time="13.26" timestamp="Fri, 01 Jul 2016 20:59:06 GMT">
+  
+    <testcase name="Checking login page toggle signin signup form" time="3.874" assertions="8">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Checking login failure handler" time="3.063" assertions="7">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Checking redirect to login page and signin as paid brokerage" time="3.394" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Checking redirect to login page and signin as unpaid account" time="2.928" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+  
+  </testsuite>
+</testsuites>

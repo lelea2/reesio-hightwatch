@@ -4,27 +4,32 @@ module.exports = {
             .init()
             .waitForElementVisible('body', 2000);
 
+        browser.assert.title("Reesio | Home");
         browser.expect.element('.mod-header .log-in').to.be.present;
         browser.expect.element('.demo .onboard-demo').to.be.present;
         browser.expect.element('.signup .onboard-signup').to.be.present;
+        browser.expect.element('a.benefits').to.be.present;
     },
 
     'Test sidebar menu in homepage': (browser) => {
         browser.click(".mod-header .info-menu", function(response) {
             browser.expect.element(".mod-info-menu .body").to.be.visible;
-            //browser.expect.element(".links a[href='/features']").to.be.visible;
+            browser.expect.element(".links a:nth-child(1)").to.have.attribute("href").equals("https://www.reesio.com/features");
+            browser.expect.element(".links a:nth-child(2)").to.have.attribute("href").contains("https://www.reesio.com/#pricing");
+            browser.expect.element(".links a:nth-child(3)").to.have.attribute("href").contains("https://www.reesio.com/how-it-works");
+            browser.expect.element(".links a:nth-child(4)").to.have.attribute("href").contains("https://www.reesio.com/faq");
+            browser.assert.cssClassPresent(".mod-info-menu", "visible");
         });
-        browser.pause(500);
+        browser.pause(300);
         browser.click(".mod-info-menu .toolbar span.pull-left", function(response) {
-            //browser.expect.element(".mod-info-menu .body").to.not.be.visible;
-            //browser.expect.element(".links a[href='/features']").to.be.visible;
+            browser.assert.cssClassNotPresent(".mod-info-menu", "visible");
         });
     },
 
     'Test request demo submission': (browser) => {
         browser.click(".onboard-demo", function(response) {
             browser.expect.element('.mod-demo-request').to.be.visible;
-            browser.pause(500);
+            browser.pause(300);
             browser.setValue(".mod-demo-request form input[name=name]", "Khanh");
             browser.setValue(".mod-demo-request form input[name=email]", "fakeemail@");
             browser.setValue(".mod-demo-request form input[name=phone]", "(123) 123-1234");
@@ -56,15 +61,15 @@ module.exports = {
     'Test get start button behavior': (browser) => {
         browser.click(".onboard-signup", function(response) {
             browser.expect.element('.mod-signup').to.be.visible;
-            browser.pause(500);
+            browser.pause(300);
             browser.click(".mod-signup .close-btn", function(response) {
             });
-            browser.pause(500);
+            browser.pause(300);
             browser.expect.element('.mod-signup').to.not.be.visible;
         });
     },
 
     after: (browser) => {
-        browser.pause(4000).end();
+        browser.pause(2000).end();
     }
 };
