@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="1">
+
+  <testsuite name="dashboardpage.test"
+    errors="0" failures="0" hostname="" id="" package="dashboardpage.test" skipped="0"
+    tests="1" time="10.28" timestamp="Wed, 13 Jul 2016 16:17:53 GMT">
+  
+    <testcase name="Checking dashboard content" time="10.28" assertions="1">
+
+    
+    </testcase>
+  
+  
+  </testsuite>
+</testsuites>

@@ -1,5 +1,6 @@
 module.exports = {
     'Checking button on home page': (browser) => {
+        browser.resizeWindow(320, 800);
         browser
             .init()
             .waitForElementVisible('body', 2000);

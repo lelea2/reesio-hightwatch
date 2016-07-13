@@ -32,6 +32,21 @@
         "javascriptEnabled": true,
         "acceptSslCerts": true
       }
+    },
+    "staging" : {
+      "launch_url" : " https://agentsan:10elmstreet@reaslo-staging.herokuapp.com/?mobile_override=true",
+      "selenium_port"  : 4444,
+      "selenium_host"  : "localhost",
+      "silent": true,
+      "screenshots" : {
+        "enabled" : true,
+        "path" : ""
+      },
+      "desiredCapabilities": {
+        "browserName": "chrome",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true
+      }
     }
   }
 }
