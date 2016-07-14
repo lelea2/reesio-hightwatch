@@ -68,7 +68,7 @@
       },
       "desiredCapabilities": {
         "name" : "firefox-test",
-        "browserName": "firefox"
+        "browserName": "chrome"
       },
       "globals" : {
         "myGlobal" : "my_global"

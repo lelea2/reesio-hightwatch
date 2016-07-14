@@ -5,9 +5,9 @@
 
   <testsuite name="homepage.test"
     errors="0" failures="0" hostname="" id="" package="homepage.test" skipped="0"
-    tests="4" time="8.758" timestamp="Thu, 14 Jul 2016 21:21:02 GMT">
+    tests="4" time="19.08" timestamp="Thu, 14 Jul 2016 21:34:58 GMT">
   
-    <testcase name="Checking button on home page" time="4.287" assertions="6">
+    <testcase name="Checking button on home page" time="7.142" assertions="6">
 
     
 
@@ -22,26 +22,7 @@
     
     </testcase>
   
-    <testcase name="Test sidebar menu in homepage" time="0.9900" assertions="7">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="Test request demo submission" time="2.701" assertions="8">
-
-    
+    <testcase name="Test sidebar menu in homepage" time="2.384" assertions="7">
 
     
 
@@ -58,7 +39,26 @@
     
     </testcase>
   
-    <testcase name="Test get start button behavior" time="0.7800" assertions="2">
+    <testcase name="Test request demo submission" time="7.914" assertions="8">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Test get start button behavior" time="1.639" assertions="2">
 
     
 

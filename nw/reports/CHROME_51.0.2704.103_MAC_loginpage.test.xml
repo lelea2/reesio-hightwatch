@@ -5,9 +5,9 @@
 
   <testsuite name="loginpage.test"
     errors="0" failures="0" hostname="" id="" package="loginpage.test" skipped="0"
-    tests="4" time="18.46" timestamp="Thu, 14 Jul 2016 16:35:31 GMT">
+    tests="4" time="19.42" timestamp="Thu, 14 Jul 2016 21:21:02 GMT">
   
-    <testcase name="Checking login page toggle signin signup form" time="4.919" assertions="7">
+    <testcase name="Checking login page toggle signin signup form" time="5.708" assertions="7">
 
     
 
@@ -24,7 +24,7 @@
     
     </testcase>
   
-    <testcase name="Checking login failure handler" time="4.373" assertions="7">
+    <testcase name="Checking login failure handler" time="4.421" assertions="7">
 
     
 
@@ -41,14 +41,14 @@
     
     </testcase>
   
-    <testcase name="Checking redirect to login page and signin as paid brokerage" time="5.047" assertions="2">
+    <testcase name="Checking redirect to login page and signin as paid brokerage" time="4.953" assertions="2">
 
     
 
     
     </testcase>
   
-    <testcase name="Checking redirect to login page and signin as unpaid account" time="4.126" assertions="2">
+    <testcase name="Checking redirect to login page and signin as unpaid account" time="4.340" assertions="2">
 
     
 

@@ -35,6 +35,19 @@ module.exports = {
                 browser.expect.element(".mod-signup label.error[for='user_email'").to.be.visible;
                 browser.expect.element(".mod-signup label.error[for='user_password'").to.be.visible;
             });
+
+            //valid email and password
+            browser.setValue(".mod-signup form input[name='user[first_name]']", "Khanh");
+            browser.setValue(".mod-signup form input[name='user[last_name]']", "Test");
+            browser.setValue(".mod-signup form input[name='user[phone]']", faker.PhoneNumber.phoneNumberFormat(5));
+            browser.setValue(".mod-signup form input[name='user[email]']", faker.Internet.email());
+            browser.setValue(".mod-signup form input[name='user[password]']", "testing123");
+            browser.click(".mod-signup button[type=submit]", function(response) {
+                browser.pause(500);
+                /*browser.url(function(result) {
+                    //this.assert.equal(result.value, 'https://www.reesio.com/dashboard'); //TODO: https://www.reesio.com in config
+                });*/
+            });
         });
     },
 
