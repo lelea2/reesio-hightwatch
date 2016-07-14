@@ -4,10 +4,10 @@
             tests="4">
 
   <testsuite name="loginpage.test"
-    errors="4" failures="1" hostname="" id="" package="loginpage.test" skipped="0"
-    tests="4" time="20.58" timestamp="Wed, 13 Jul 2016 20:06:36 GMT">
+    errors="4" failures="1" hostname="" id="" package="loginpage.test" skipped="1"
+    tests="4" time="21.82" timestamp="Wed, 13 Jul 2016 21:22:45 GMT">
   
-    <testcase name="Checking login page toggle signin signup form" time="7.357" assertions="8">
+    <testcase name="Checking login page toggle signin signup form" time="8.205" assertions="8">
 
     
 
@@ -31,7 +31,7 @@
  ERROR: Unable to locate element: &quot;.mod-signin button[type=submit]&quot; using: css selector
       </system-err>
   
-    <testcase name="Checking login failure handler" time="4.338" assertions="7">
+    <testcase name="Checking login failure handler" time="5.521" assertions="7">
 
     
 
@@ -53,23 +53,11 @@
  ERROR: Unable to locate element: &quot;.mod-signin button[type=submit]&quot; using: css selector
       </system-err>
   
-    <testcase name="Checking redirect to login page and signin as paid brokerage" time="4.697" assertions="2">
-
-    
-
-    
-    </testcase>
-      <system-err>
-         ERROR: Unable to locate element: &quot;.mod-signin form input[name=&#39;user[email]&#39;]&quot; using: css selector
- ERROR: Unable to locate element: &quot;.mod-signin form input[name=&#39;user[password]&#39;]&quot; using: css selector
- ERROR: Unable to locate element: &quot;.mod-signin button[type=submit]&quot; using: css selector
-      </system-err>
-  
-    <testcase name="Checking redirect to login page and signin as unpaid account" time="4.189" assertions="2">
-<system-out>[[ATTACHMENT|/Users/kdao/Works/reesio-nightwatch/loginpage.test/Checking-redirect-to-login-page-and-signin-as-unpaid-account_ERROR_Jul-13-2016-130656-GMT-0700.png]][[ATTACHMENT|/Users/kdao/Works/reesio-nightwatch/loginpage.test/Checking-redirect-to-login-page-and-signin-as-unpaid-account_ERROR_Jul-13-2016-130656-GMT-0700.png]][[ATTACHMENT|/Users/kdao/Works/reesio-nightwatch/loginpage.test/Checking-redirect-to-login-page-and-signin-as-unpaid-account_ERROR_Jul-13-2016-130657-GMT-0700.png]]</system-out>
-      <failure message="Failed [equal]: (&#39;https://www.reesio.com/users/sign_in&#39; == &#39;https://www.reesio.com/transactions&#39;)">Failed [equal]: (&#39;https://www.reesio.com/users/sign_in&#39; == &#39;https://www.reesio.com/transactions&#39;): Failed [equal]: (&#39;https://www.reesio.com/users/sign_in&#39; == &#39;https://www.reesio.com/transactions&#39;) - Expected &quot;https://www.reesio.com/transactions&quot; but got: &quot;https://www.reesio.com/users/sign_in&quot;
+    <testcase name="Checking redirect to login page and signin as paid brokerage" time="8.096" assertions="2">
+<system-out>[[ATTACHMENT|/Users/kdao/Works/reesio-nightwatch/loginpage.test/Checking-redirect-to-login-page-and-signin-as-paid-brokerage_ERROR_Jul-13-2016-142306-GMT-0700.png]][[ATTACHMENT|/Users/kdao/Works/reesio-nightwatch/loginpage.test/Checking-redirect-to-login-page-and-signin-as-paid-brokerage_ERROR_Jul-13-2016-142306-GMT-0700.png]][[ATTACHMENT|/Users/kdao/Works/reesio-nightwatch/loginpage.test/Checking-redirect-to-login-page-and-signin-as-paid-brokerage_ERROR_Jul-13-2016-142307-GMT-0700.png]]</system-out>
+      <failure message="Failed [equal]: (&#39;https://www.reesio.com/users/sign_in&#39; == &#39;https://www.reesio.com/dashboard&#39;)">Failed [equal]: (&#39;https://www.reesio.com/users/sign_in&#39; == &#39;https://www.reesio.com/dashboard&#39;): Failed [equal]: (&#39;https://www.reesio.com/users/sign_in&#39; == &#39;https://www.reesio.com/dashboard&#39;) - Expected &quot;https://www.reesio.com/dashboard&quot; but got: &quot;https://www.reesio.com/users/sign_in&quot;
     at Object.equal (/Users/kdao/Works/reesio-nightwatch/node_modules/nightwatch/lib/core/api.js:67:24)
-    at Object.&lt;anonymous&gt; (/Users/kdao/Works/reesio-nightwatch/nw/tests/loginpage.test.js:86:33)
+    at Object.&lt;anonymous&gt; (/Users/kdao/Works/reesio-nightwatch/nw/tests/loginpage.test.js:72:33)
     at HttpRequest.&lt;anonymous&gt; (/Users/kdao/Works/reesio-nightwatch/node_modules/nightwatch/lib/index.js:333:20)
     at emitTwo (events.js:87:13)
     at HttpRequest.emit (events.js:172:7)
@@ -87,6 +75,13 @@
  ERROR: Unable to locate element: &quot;.mod-signin button[type=submit]&quot; using: css selector
       </system-err>
   
+  
+    
+    <testcase
+      name="Checking redirect to login page and signin as unpaid account">
+      <skipped />
+    </testcase>
+    
   
   </testsuite>
 </testsuites>

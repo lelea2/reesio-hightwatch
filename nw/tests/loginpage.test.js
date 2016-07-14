@@ -2,9 +2,6 @@ module.exports = {
 
     beforeEach : function(browser) {
         browser.resizeWindow(320, 800);
-        browser.deleteCookies(function() {
-            // do something more in here
-        });
         browser
             .init()
             .waitForElementVisible('body', 1000);
