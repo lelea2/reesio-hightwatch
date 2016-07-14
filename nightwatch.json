@@ -14,7 +14,8 @@
     "port" : 4444,
     "cli_args" : {
       "webdriver.chrome.driver" : "./node_modules/chromedriver/bin/chromedriver",
-      "webdriver.ie.driver" : ""
+      "webdriver.ie.driver" : "",
+      "webdriver.firefox.profile" : ""
     }
   },
   "test_settings" : {
@@ -46,6 +47,30 @@
         "browserName": "chrome",
         "javascriptEnabled": true,
         "acceptSslCerts": true
+      }
+    },
+    "saucelabs" : {
+      "selenium_host" : "ondemand.saucelabs.com",
+      "selenium_port" : 80,
+      "username" : "lelea21988",
+      "access_key" : "${SAUCE_ACCESS_KEY}",
+      "use_ssl" : false,
+      "silent" : true,
+      "output" : true,
+      "screenshots" : {
+        "enabled" : false,
+        "on_failure" : true,
+        "path" : ""
+      },
+      "desiredCapabilities": {
+        "name" : "test-example",
+        "browserName": "firefox"
+      },
+      "globals" : {
+        "myGlobal" : "some_sauce_global"
+      },
+      "selenium" : {
+        "start_process" : false
       }
     }
   }

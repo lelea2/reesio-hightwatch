@@ -1,6 +1,6 @@
 module.exports = {
     'Checking button on home page': (browser) => {
-        browser.resizeWindow(320, 800);
+        browser.resizeWindow(320, 800); //make sure mobile size
         browser
             .init()
             .waitForElementVisible('body', 2000);
@@ -25,10 +25,11 @@ module.exports = {
         browser.click(".mod-info-menu .toolbar span.pull-left", function(response) {
             browser.assert.cssClassNotPresent(".mod-info-menu", "visible");
         });
+        browser.pause(100);
     },
 
     'Test request demo submission': (browser) => {
-        browser.click(".onboard-demo", function(response) {
+        browser.click(".landing-actions .onboard-demo", function(response) {
             browser.expect.element('.mod-demo-request').to.be.visible;
             browser.pause(300);
             browser.setValue(".mod-demo-request form input[name=name]", "Khanh");
@@ -60,7 +61,7 @@ module.exports = {
     },
 
     'Test get start button behavior': (browser) => {
-        browser.click(".onboard-signup", function(response) {
+        browser.click(".landing-actions .onboard-signup", function(response) {
             browser.expect.element('.mod-signup').to.be.visible;
             browser.pause(300);
             browser.click(".mod-signup .close-btn", function(response) {
