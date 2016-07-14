@@ -76,6 +76,43 @@
       "selenium" : {
         "start_process" : false
       }
+    },
+    "chrome": {
+      "desiredCapabilities": {
+        "platform": "XP",
+        "browserName": "chrome",
+        "version": "41"
+      }
+    },
+    "firefox" : {
+      "desiredCapabilities": {
+        "platform": "XP",
+        "browserName": "firefox",
+        "version": "33"
+      }
+    },
+    "internet_explorer_10" : {
+      "desiredCapabilities": {
+        "platform": "Windows 7",
+        "browserName": "internet explorer",
+        "version": "10"
+      }
+    },
+    "android_s4_emulator": {
+      "desiredCapabilities": {
+        "browserName": "android",
+        "deviceOrientation": "portrait",
+        "deviceName": "Samsung Galaxy S4 Emulator"
+      }
+    },
+    "iphone_6_simulator": {
+      "desiredCapabilities": {
+        "browserName": "iPhone",
+        "deviceOrientation": "portrait",
+        "deviceName": "iPhone 6",
+        "platform": "OSX 10.10",
+        "version": "8.4"
+      }
     }
   }
 }
