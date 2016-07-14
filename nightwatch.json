@@ -18,6 +18,10 @@
       "webdriver.firefox.profile" : ""
     }
   },
+  "test_workers" : {
+    "enabled" : true,
+    "workers" : "auto"
+  },
   "test_settings" : {
     "default" : {
       "launch_url" : "https://www.reesio.com/?mobile_override=true",
@@ -49,11 +53,11 @@
         "acceptSslCerts": true
       }
     },
-    "saucelabs" : {
+    "saucelabs_ff" : {
       "selenium_host" : "ondemand.saucelabs.com",
       "selenium_port" : 80,
       "username" : "lelea21988",
-      "access_key" : "${SAUCE_ACCESS_KEY}",
+      "access_key" : "144deb4f-0b68-41cb-89d8-e68a7c061d54",
       "use_ssl" : false,
       "silent" : true,
       "output" : true,
@@ -63,11 +67,11 @@
         "path" : ""
       },
       "desiredCapabilities": {
-        "name" : "test-example",
+        "name" : "firefox-test",
         "browserName": "firefox"
       },
       "globals" : {
-        "myGlobal" : "some_sauce_global"
+        "myGlobal" : "my_global"
       },
       "selenium" : {
         "start_process" : false

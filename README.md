@@ -28,4 +28,7 @@ npm test
 # Run selected test suite
 node_modules/nightwatch/bin/nightwatch -t nw/tests/homepage.test.js
 
+# Run test suite with env
+node_modules/nightwatch/bin/nightwatch -t nw/tests/homepage.test.js --env saucelabs
+
 ```

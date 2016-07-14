@@ -2,6 +2,7 @@ module.exports = {
 
     beforeEach : function(browser) {
         browser.resizeWindow(320, 800); //make sure mobile size
+        browser.deleteCookies(function() {}
         browser
             .init()
             .waitForElementVisible('body', 1000);
@@ -66,7 +67,7 @@ module.exports = {
             browser.click(".mod-signin button[type=submit]", function(response) {
                 browser.pause(300);
                 browser.url(function(result) {
-                    this.assert.equal(result.value, 'https://www.reesio.com/dashboard');
+                    this.assert.equal(result.value, 'https://www.reesio.com/dashboard'); //TODO: https://www.reesio.com in config
                 });
             });
         });
