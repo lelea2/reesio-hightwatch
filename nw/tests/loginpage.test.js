@@ -2,7 +2,7 @@ module.exports = {
 
     beforeEach : function(browser) {
         browser.resizeWindow(320, 800); //make sure mobile size
-        browser.deleteCookies(function() {}
+        browser.deleteCookies(function() {});
         browser
             .init()
             .waitForElementVisible('body', 1000);
